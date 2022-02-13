@@ -9,21 +9,213 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header" class="flex">
+    <header
+      id="header"
+      class="flex place-items-center justify-between pt-8 pl-10 pr-16"
+    >
       <img
         id="header-img"
-        class="flex w-1/6 ml-10 mt-4"
+        class="flex w-1/5"
         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
         alt="logo"
       />
-      <nav id="nav-bar">
-        <ul class="flex ml-auto">
-          <li><a href="">Features</a></li>
-          <li><a href="">How It Works</a></li>
-          <li><a href="">Pricing</a></li>
-        </ul>
+      <nav id="nav-bar" class="flex gap-x-24">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
     </header>
+    <div class="flex flex-col justify-center items-center mt-10" id="how">
+      <div class="flex flex-col gap-y-4" id="features">
+        <h1 class="text-2xl font-bold">Handcrafted, home-made masterpieces</h1>
+        <div class="flex justify-center">
+          <input
+            class="border-2 border-gray-400 pl-2 w-2/3"
+            type="text"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <button
+            class="
+              text-base
+              font-bold
+              uppercase
+              rounded-sm
+              py-1
+              px-5
+              bg-yellow-400
+              hover:bg-orange-300
+              transform
+              transition-all
+              duration-300
+              ease-in-out
+            "
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="mt-24 flex flex-col gap-y-16">
+        <div class="flex flex-col">
+          <div class="flex gap-x-8">
+            <svg
+              class="w-[60px] h-[48px] fill-current text-[#fc9235]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M384 319.1C384 425.9 297.9 512 192 512s-192-86.13-192-192c0-58.67 27.82-106.8 54.57-134.1C69.54 169.3 96 179.8 96 201.5v85.5c0 35.17 27.97 64.5 63.16 64.94C194.9 352.5 224 323.6 224 288c0-88-175.1-96.12-52.15-277.2c13.5-19.72 44.15-10.77 44.15 13.03C215.1 127 384 149.7 384 319.1z"
+              />
+            </svg>
+            <div>
+              <h2 class="text-xl font-semibold">Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-x-8">
+            <svg class="w-[60px] h-[48px] fill-current text-[#fc9235]"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M368 0C394.5 0 416 21.49 416 48V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H368zM416 160V256H544V237.3L466.7 160H416zM160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368zM480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464z"/></svg>
+            
+            <div>
+              <h2 class="text-xl font-semibold">Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-x-8">
+            <svg class="w-14 h-12 fill-current text-[#fc9235]"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"/></svg>
+            <div>
+              <h2 class="text-xl font-semibold">Quality Assurance
+              </h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="flex justify-center text-center mt-20">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div id="pricing" class="grid grid-flow-col justify-center mt-20 gap-x-4">
+      <div class="rounded-sm border-2 border-black flex flex-col justify-center items-center pb-4">
+        <h2 class=" bg-gray-200 py-2 px-20">
+          TENOR TROMBONE
+        </h2>
+        <h3 class="text-2xl font-semibold mt-4">$600</h3>
+        <div class="flex flex-col gap-y-1 mt-4 text-center">
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="flex justify-center items-center mt-6">
+        <button
+          class="
+            text-base
+            font-semibold
+            uppercase
+            rounded-sm
+            py-1
+            px-5
+            bg-yellow-400
+            hover:bg-orange-300
+            transform
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          Select
+        </button>
+      </div>
+      </div>
+      <div class="rounded-sm border-2 border-black flex flex-col justify-center items-center pb-4">
+        <h2 class=" bg-gray-200 py-2 px-20">
+          BASS TROMBONE
+        </h2>
+        <h3 class="text-2xl font-semibold mt-4">$900</h3>
+        <div class="flex flex-col gap-y-1 mt-4 text-center">
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="flex justify-center items-center mt-6">
+        <button
+          class="
+            text-base
+            font-semibold
+            uppercase
+            rounded-sm
+            py-1
+            px-5
+            bg-yellow-400
+            hover:bg-orange-300
+            transform
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          Select
+        </button>
+      </div>
+      </div>
+      <div class="rounded-sm border-2 border-black flex flex-col justify-center items-center pb-4">
+        <h2 class=" bg-gray-200 py-2 px-20">
+          VALVE TROMBONE
+        </h2>
+        <h3 class="text-2xl font-semibold mt-4">$1200</h3>
+        <div class="flex flex-col gap-y-1 mt-4 text-center">
+        <p>Plays similar to a Trumpet</p>
+        <p>Great for Jazz Bands</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+      </div>
+      <div class="flex justify-center items-center mt-6">
+        <button
+          class="
+            text-base
+            font-semibold
+            uppercase
+            rounded-sm
+            py-1
+            px-5
+            bg-yellow-400
+            hover:bg-orange-300
+            transform
+            transition-all
+            duration-300
+            ease-in-out
+          "
+        >
+          Select
+        </button>
+      </div>
+      </div>
+    </div>
+    </div>
 
     <!--
 
